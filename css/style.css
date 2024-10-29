@@ -1,4 +1,4 @@
-/*
+/* 
 COLORS:
 
 Light green: #7ed56f
@@ -6,7 +6,7 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
+/*
 * {
   margin: 0;
   padding: 0;
@@ -20,14 +20,10 @@ body {
   color: #777;
   padding: 30px;
 }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.795),
-      rgba(40, 180, 133, 0.855)
-    ),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.795), rgba(40, 180, 133, 0.855)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0, 100% 75vh, 0% 100%);
@@ -39,6 +35,7 @@ body {
   top: 40px;
   left: 40px;
 }
+
 .logo {
   width: 40px;
 }
@@ -65,6 +62,7 @@ body {
   letter-spacing: 35px;
   animation: movingToLeft 1s ease-out;
 }
+
 .heading-primary-sub {
   display: block;
   font-size: 20px;
@@ -99,7 +97,6 @@ body {
     transform: translateX(0%);
   }
 }
-
 .btn:link,
 .btn:active {
   text-transform: uppercase;
@@ -108,20 +105,21 @@ body {
   border-radius: 100px;
   padding: 15px 40px;
   text-decoration: none;
-  /* transform: translateY(30px); */
+  /* transform: translateY(30px); 
   transition: all ease-out 0.2s;
   position: relative;
-  animation: btntoTop 0.5s ease-out;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .btn-white {
   background-color: #fff;
   color: #777;
@@ -139,12 +137,19 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
+
 .btn-white::after {
   background-color: #fff;
 }
-.btn:hover::after {
+
+.btn:active::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.btn-animated {
+  animation: btntoTop 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes btntoTop {
@@ -157,3 +162,5 @@ body {
     opacity: 1;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
