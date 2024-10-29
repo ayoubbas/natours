@@ -6,9 +6,12 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-$colot-primary: #55c57a;
-$colot-primary-light: #7ed56f;
-$colot-primary-dark: #28b485;
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-grey-dark: #777;
+
 * {
   margin: 0;
   padding: 0;
@@ -19,15 +22,15 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 30px;
 }
 .header {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($colot-primary, 0.795),
-      rgba($colot-primary-dark, 0.855)
+      rgba($color-primary, 0.795),
+      rgba($color-primary-dark, 0.855)
     ),
     url(../img/hero.jpg);
   background-size: cover;
@@ -125,7 +128,7 @@ body {
 }
 .btn-white {
   background-color: #fff;
-  color: #777;
+  color: $color-grey-dark;
 }
 
 .btn::after {
