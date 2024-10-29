@@ -1,4 +1,4 @@
-/* 
+/*
 COLORS:
 
 Light green: #7ed56f
@@ -6,12 +6,12 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
@@ -105,7 +105,7 @@ body {
   border-radius: 100px;
   padding: 15px 40px;
   text-decoration: none;
-  /* transform: translateY(30px); 
+  /* transform: translateY(30px); */
   transition: all ease-out 0.2s;
   position: relative;
 }
