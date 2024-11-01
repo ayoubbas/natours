@@ -127,6 +127,15 @@ body {
   animation-fill-mode: backwards;
 }
 
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.795), rgba(40, 180, 133, 0.855)), url(../img/hero.jpg);
