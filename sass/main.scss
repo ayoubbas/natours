@@ -8,6 +8,9 @@
 @import "abstracts/variables";
 
 @import "pages/home";
+
+@import "components/buttons";
+@import "layout/header";
 /*
 COLORS:
 
@@ -16,8 +19,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +33,6 @@ body {
   padding: 30px;
 }
 
-
-
-
+main h1 {
+  background-color: red;
+}
