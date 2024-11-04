@@ -98,6 +98,8 @@ body {
 }
 
 .section-about {
+  margin-top: -20vh;
+  padding-top: 20rem;
   background-color: #f7f7f7;
 }
 
