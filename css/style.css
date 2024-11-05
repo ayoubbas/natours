@@ -91,6 +91,7 @@ body {
   color: transparent;
   letter-spacing: 0.3rem;
   transition: all 0.2s;
+  padding-bottom: 8rem;
 }
 .secondary-heading:hover {
   transform: skew(15deg, 2deg) scale(1.1);
