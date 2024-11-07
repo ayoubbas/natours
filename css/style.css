@@ -95,7 +95,7 @@ body {
 }
 .secondary-heading:hover {
   transform: skew(15deg, 2deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .u-center-text {
@@ -159,7 +159,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -171,7 +170,6 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: orangered;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
