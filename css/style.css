@@ -98,7 +98,7 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.heading-tertiary-2 {
+.heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -115,14 +115,28 @@ body {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.6rem;
 }
 
 .section-about {
   margin-top: -20vh;
   padding-top: 20rem;
   background-color: #f7f7f7;
+}
+
+.section-about {
+  padding-bottom: 10rem;
+}
+
+.section-features {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.795), rgba(40, 180, 133, 0.855)), url(../img/nat-4.jpg);
+  background-size: cover;
 }
 
 .btn:link, .btn:active {
