@@ -3,10 +3,12 @@
   &__photo {
     width: 55%;
     box-shadow: 0rem 1rem 4rem rgba($color-black, 0.4);
-    border-radius: 5px;
+    // border-radius: 2px;
     position: absolute;
+    transition: all 0.3s;
+    outline-offset: 2rem;
     &--p1 {
-      top: 0;
+      top: -2rem;
       left: 0;
     }
     &--p2 {
@@ -17,5 +19,13 @@
       top: 10rem;
       left: 20%;
     }
+    &:hover {
+      z-index: 1;
+      transform: scale(1.05);
+      outline: 1.5rem solid $color-primary;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
   }
 }
