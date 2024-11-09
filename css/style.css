@@ -252,4 +252,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.composition__photo {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */
