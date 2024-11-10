@@ -224,7 +224,10 @@ body {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--front {
-  transform: rotateY(180deg);
+  transform: rotateY(0deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
 }
 
 .btn:link, .btn:active {
