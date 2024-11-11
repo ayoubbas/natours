@@ -202,24 +202,42 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem;
+  height: 51rem;
   position: relative;
 }
-.card__cta {
+.card__side {
+  font-size: 2rem;
+  transition: all 0.8s;
+  height: 51rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
 }
-.card__price--box {
-  margin-bottom: 3rem;
+.card__side--front {
+  color: #777;
 }
-.card__price--box p {
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 4rem;
+.card__side--back {
+  transform: rotateY(180deg);
+  color: #fff;
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right, #ffb900, #ff7730);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right, #2998ff, #5643fa);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
 }
 .card__picture {
   height: 23rem;
@@ -236,7 +254,7 @@ body {
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-7.jpg);
 }
-.card__heading--span {
+.card__heading {
   font-size: 2.8rem;
   font-weight: 300;
   text-align: right;
@@ -245,46 +263,53 @@ body {
   position: absolute;
   top: 12rem;
   right: 2rem;
-  width: 65%;
+  width: 75%;
+}
+.card__heading--span {
   padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 .card__heading--span--1 {
   background-image: linear-gradient(to right, #ffb900, #ff7730);
 }
-.card__side {
-  color: #777;
-  font-size: 2rem;
-  transition: all 8s;
-  height: 50rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  backface-visibility: hidden;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
-}
-.card__side--front {
-  list-style-type: none;
-}
-.card__side--back {
-  transform: rotateY(180deg);
-}
-.card__side--back-1 {
-  background-image: linear-gradient(to right, #ffb900, #ff7730);
-}
-.card__side--back-2 {
+.card__heading--span--2 {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
 }
-.card__side--back-3 {
+.card__heading--span--3 {
   background-image: linear-gradient(to right, #2998ff, #5643fa);
 }
-.card:hover .card__side--front {
-  transform: rotateY(-180deg);
+.card__details {
+  padding: 3rem;
 }
-.card:hover .card__side--back {
-  transform: rotateY(0deg);
+.card__details ul {
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 2px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.card__price--box {
+  margin-bottom: 3rem;
+}
+.card__price--box p {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 4rem;
 }
 
 .btn:link, .btn:active {
