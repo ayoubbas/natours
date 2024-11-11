@@ -63,12 +63,12 @@
     width: 65%;
     padding: 1rem 1.5rem;
     box-decoration-break: clone;
-    &--1{
+    &--1 {
       background-image: linear-gradient(
-          to right,
-          $color-secondary-light,
-          $color-secondary-dark
-        );
+        to right,
+        $color-secondary-light,
+        $color-secondary-dark
+      );
     }
   }
   &__side {
@@ -82,7 +82,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.8);
     &--front {
       list-style-type: none;
     }

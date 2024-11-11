@@ -263,6 +263,7 @@ body {
   width: 100%;
   backface-visibility: hidden;
   border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
 }
 .card__side--front {
   list-style-type: none;
