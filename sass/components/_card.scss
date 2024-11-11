@@ -11,7 +11,7 @@
     width: 100%;
     text-align: center;
   }
-  .card__price--box {
+  &__price--box {
     margin-bottom: 3rem;
     & p {
       font-weight: 300;
@@ -19,9 +19,60 @@
       font-size: 4rem;
     }
   }
+  &__picture {
+    height: 23rem;
+    background-size: cover;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(../../img/nat-5.jpg);
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../../img/nat-6.jpg);
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../../img/nat-7.jpg);
+    }
+  }
+
+  &__heading--span {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: right;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 65%;
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    &--1{
+      background-image: linear-gradient(
+          to right,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+    }
+  }
   &__side {
-    color: #fff;
+    color: $color-grey-dark;
     font-size: 2rem;
     transition: all 0.5s;
     height: 50rem;
@@ -30,10 +81,10 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 5px;
+    border-radius: 3px;
 
     &--front {
-      background-color: rebeccapurple;
+      list-style-type: none;
     }
     &--back {
       transform: rotateY(180deg);
