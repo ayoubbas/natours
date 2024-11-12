@@ -86,6 +86,7 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
+  display: inline-block;
   background-image: linear-gradient(to right, #28b485, #7ed56f);
   -webkit-background-clip: text;
   color: transparent;
