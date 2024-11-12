@@ -153,6 +153,10 @@ body {
   margin: 10rem 0;
 }
 
+.stories-section {
+  background-color: darkgray;
+}
+
 .composition {
   position: relative;
 }
@@ -391,6 +395,25 @@ body {
   transform: translateY(0);
 }
 
+.story {
+  background-color: #fff;
+  box-shadow: 0rem 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+}
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-10px);
+}
 .row {
   max-width: 114rem;
   margin: 0 auto;
