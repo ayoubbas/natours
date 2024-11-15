@@ -22,10 +22,32 @@
   }
 }
 
-
-.section-tours{
-  margin: 10rem 0;
+.section-tours {
+  margin-top: -10rem;
+  padding: 20rem 0;
+  background-color: $color-white-light;
 }
 
-.stories-section{
+.stories-section {
+  position: relative;
+  padding: 15rem 0;
+  overflow: hidden;
+}
+
+.section-book {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
+
+.book__form {
+  
+  height: 50rem;
+  background-image: url(../../img/nat-10.jpg);
+
+  
 }

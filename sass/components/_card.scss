@@ -16,14 +16,13 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.8);
     overflow: hidden;
+    background-color: $color-white;
     &--front {
-    color: $color-grey-dark;
-
+      color: $color-grey-dark;
     }
     &--back {
       transform: rotateY(180deg);
       color: $color-white;
-
       &-1 {
         background-image: linear-gradient(
           to right,
