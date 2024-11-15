@@ -35,8 +35,7 @@
 }
 
 .section-book {
-  width: 100%;
-  height: 100vh;
+padding: 15rem 0;
   background-image: linear-gradient(
     to bottom right,
     $color-primary-light,
@@ -45,8 +44,8 @@
 }
 
 .book__form {
-  
   height: 50rem;
+  width: 100%;
   background-image: url(../../img/nat-10.jpg);
 
   
