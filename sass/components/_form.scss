@@ -74,9 +74,13 @@
       background-color: $color-primary;
       border-radius: 50%;
       opacity: 0;
-
+      transition: all 0.3s;
     }
-
   }
-  
+  &__radio--input {
+    display: none;
+  }
+  &__radio--input:checked ~ &__radio--label &__radio--button::after {
+    opacity: 1;
+  }
 }
