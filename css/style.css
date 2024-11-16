@@ -342,7 +342,7 @@ body {
   font-size: 4rem;
 }
 
-.btn:link, .btn:active {
+.btn, .btn:link, .btn:active {
   text-transform: uppercase;
   display: inline-block;
   border: none;
@@ -355,6 +355,8 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1.6rem;
+  cursor: pointer;
+  margin-top: 2rem;
 }
 .btn:hover {
   transform: translateY(-3px);
