@@ -11,6 +11,8 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
+    text-align: center;
+    cursor: pointer;
   }
   &__background {
     width: 6rem;
@@ -91,7 +93,7 @@
   &__icon {
     position: relative;
     margin-top: 3.5rem;
-    
+
     &,
     &::before,
     &::after {
@@ -103,6 +105,32 @@
     &::before,
     &::after {
       content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
     }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  .navigation__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(135deg);
   }
 }
