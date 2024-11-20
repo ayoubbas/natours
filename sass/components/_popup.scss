@@ -9,10 +9,6 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
 
   &__content {
     width: 75%;
@@ -23,6 +19,8 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.4s 0.2s;
   }
   &__left {
     width: 33.33333333%;
@@ -49,5 +47,30 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+  }
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  &:target &__content {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark-3;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      line-height: 1;
+    }
   }
 }
