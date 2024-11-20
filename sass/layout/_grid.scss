@@ -5,6 +5,9 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-h;
+    @include respond(tab-port) {
+      margin-right: 0;
+    }
   }
   @include clearfix;
   [class^="col-"] {
@@ -13,6 +16,12 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-v;
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
+    }
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
   .col-1-of-2 {
