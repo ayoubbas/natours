@@ -14,7 +14,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.8);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;
     background-color: $color-white;
     &--front {
@@ -154,10 +154,60 @@
   }
   &__price--box {
     margin-bottom: 3rem;
-    & p {
-      font-weight: 300;
-      text-transform: uppercase;
-      font-size: 4rem;
+    // & p {
+    //   font-weight: 300;
+    //   text-transform: uppercase;
+    //   font-size: 4rem;
+    // }
+  }
+  &__price--only {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  &__price--value {
+    font-size: 4rem;
+  }
+
+  @include respond(tab-port) {
+    // 888888888888888888888888
+
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0rem 1.5rem 4rem rgba($color-black, 0.4);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      &--back {
+        // margin-top: -8rem;
+        transform: rotateY(0);
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 85vh, 0% 100%);
+        clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    //font style
+
+    // BACK sTYLE
+
+    &__cta {
+      // @include centerElment;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 8rem 4rem 4rem 4rem;
+    }
+    &__price--box {
+      margin-bottom: 0rem;
     }
   }
 }
