@@ -2,7 +2,10 @@
   text-align: center;
 }
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
 }
 .u-margin-bottom-huge {
   margin-top: 12rem;
