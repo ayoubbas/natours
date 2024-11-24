@@ -32,7 +32,9 @@
   padding: 20rem 0;
   background-color: $color-white-light;
   @include respond(tab-port) {
-    padding: 5rem 0;
+    padding: 10rem 0;
+  margin-top: -3rem;
+
   }
 }
 
